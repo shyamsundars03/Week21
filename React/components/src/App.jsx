@@ -6,6 +6,7 @@ import Content from './content'
 import Funtoclass from './funtoclass'
 import Button from "./button"
 import Usecallback from './Usecallback'
+import Products from './Products'
 const App = () => {
 
   return (
@@ -17,8 +18,11 @@ const App = () => {
       <Button text={"heeloo"}  color={"red"}  />
       <Button text={"heeloo"} /> */}
 
-<Usecallback />
+{/* <Usecallback /> */}
 
+
+
+<Products/>
     </div>
   )
 }
