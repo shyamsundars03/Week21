@@ -149,6 +149,37 @@ function heapS(arr){
 }
 console.log(heapS([54,2,33,55,7,6]))
 
+//CHECK IF AN ARRAY IS MIN HEAP / MAX HEAP (<)
+function isMinHeap(arr) {
+    const n = arr.length;
+
+    for (let i = 0; i <= Math.floor(n / 2) - 1; i++) {
+        let l = 2 * i + 1;
+        let r = 2 * i + 2;
+
+        if (l < n && arr[i] > arr[l]) return false;
+        if (r < n && arr[i] > arr[r]) return false;
+    }
+
+    return true;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
